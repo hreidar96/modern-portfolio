@@ -13,6 +13,7 @@ import { fetchSkills } from "../utils/fetchSkills";
 import { fetchProjects } from "../utils/fetchProjects";
 import { fetchSocial } from "../utils/fetchSocials";
 import Link from "next/link";
+import Image from "next/image";
 
 type Props = {
   pageInfo: PageInfo;
@@ -24,7 +25,7 @@ type Props = {
 
 const Home = ({ projects, skills, pageInfo, experiences, socials }: Props) => {
   return (
-    <div className="snap-y snap-mandatory h-screen overflow-y-scroll scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 bg-[rgb(36,36,36)] text-white z-0">
+    <div className="snap-y snap-mandatory h-screen overflow-y-scroll scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#E4572E]/80 bg-[#0B2027] text-white z-0">
       <Header socials={socials} />
 
       {/* Hero Banner Section */}
@@ -60,10 +61,11 @@ const Home = ({ projects, skills, pageInfo, experiences, socials }: Props) => {
       <Link href="#hero">
         <footer className="sticky bottom-5 w-full cursor-pointer">
           <div className="flex items-center justify-center">
-            <img
+            <Image
               className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
               src="https://i.imgur.com/e2yvD6A.png"
               alt=""
+              layout="fill"
             />
           </div>
         </footer>

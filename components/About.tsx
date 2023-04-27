@@ -16,10 +16,9 @@ function About({ pageInfo }: Props) {
       transition={{ duration: 1.5 }}
       className="flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 h-screen justify-evenly mx-auto items-center"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-24 uppercase tracking-[20px] text-[#F4D58D] text-2xl">
         About
       </h3>
-
       <motion.img
         initial={{
           x: -200,
@@ -30,11 +29,10 @@ function About({ pageInfo }: Props) {
         src={urlFor(pageInfo?.profilePic).url()}
         className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[600px] object-cover"
       ></motion.img>
-
       <div className="space-y-10 px-0 md:px-10">
         <h4 className="text-4xl font-semibold">
           Here is a{" "}
-          <span className="decoration-[#F7AB0A]/50 underline">little</span>{" "}
+          <span className="decoration-[#E4572E]/50 underline">little</span>{" "}
           background
         </h4>
         <p className="text-lg">{pageInfo?.backgroundInformation}</p>
