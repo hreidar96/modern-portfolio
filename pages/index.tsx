@@ -1,3 +1,5 @@
+"use client";
+
 import { GetStaticProps } from "next";
 import About from "../components/About";
 import ContactMe from "../components/ContactMe";
@@ -12,8 +14,6 @@ import { fetchExperiences } from "../utils/fetchExperiences";
 import { fetchSkills } from "../utils/fetchSkills";
 import { fetchProjects } from "../utils/fetchProjects";
 import { fetchSocial } from "../utils/fetchSocials";
-import Link from "next/link";
-import Image from "next/image";
 
 type Props = {
   pageInfo: PageInfo;
@@ -57,19 +57,6 @@ const Home = ({ projects, skills, pageInfo, experiences, socials }: Props) => {
       <section id="contact" className="snap-start">
         <ContactMe pageInfo={pageInfo} />
       </section>
-
-      <Link href="#hero">
-        <footer className="sticky bottom-5 w-full cursor-pointer">
-          <div className="flex items-center justify-center">
-            <Image
-              className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
-              src="https://i.imgur.com/e2yvD6A.png"
-              alt=""
-              layout="fill"
-            />
-          </div>
-        </footer>
-      </Link>
     </div>
   );
 };

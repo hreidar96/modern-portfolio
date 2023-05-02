@@ -27,9 +27,10 @@ function Hero({ pageInfo }: Props) {
       <Image
         className="relative rounded-full h-32 w-32 mx-auto object-cover"
         src={urlFor(pageInfo?.heroImage).url()}
-        alt=""
+        alt="Profile pic"
         width={200}
         height={200}
+        priority
       />
       <div className="z-20 relative">
         <h2 className="tracking-[15px] text-sm uppercase text-[#F4D58D] pb-2">

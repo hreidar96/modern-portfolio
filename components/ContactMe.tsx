@@ -37,9 +37,8 @@ function ContactMe({ pageInfo }: Props) {
       </h3>
 
       <div className="flex flex-col space-y-10">
-        <h4 className="text-4xl font-semibold text-center">
-          I have got just what you need.{" "}
-          <span className="decoration-[#E4572E]/50 underline">Lets Talk.</span>
+        <h4 className="text-4xl font-semibold text-center decoration-[#E4572E]/50 underline pt-10 mt-10">
+          Lets Talk.
         </h4>
 
         <div className="space-y-10">
